@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:math_expressions/math_expressions.dart'; // Importing necessary library.
+import 'package:math_expressions/math_expressions.dart';
 
 class Calculator extends StatefulWidget {
-  const Calculator({super.key});
+   const Calculator({super.key});
 
   @override
   State<Calculator> createState() => _CalculatorState();
@@ -48,8 +48,8 @@ class _CalculatorState extends State<Calculator> {
                 Container(
                   padding: const EdgeInsets.all(20),
                   alignment: Alignment.centerRight,
-                  child: const Text(
-                    "UserInput",
+                  child: Text(
+                    userInput,
                     style: TextStyle(
                       fontSize: 32,
                       color: Color.fromARGB(255, 248, 248, 248),
@@ -59,8 +59,8 @@ class _CalculatorState extends State<Calculator> {
                 Container(
                   padding: const EdgeInsets.all(10),
                   alignment: Alignment.centerRight,
-                  child: const Text(
-                    "result",
+                  child: Text(
+                    result,
                     style: TextStyle(
                       fontSize: 48,
                       color: Color.fromARGB(255, 248, 248, 248),
@@ -110,7 +110,7 @@ class _CalculatorState extends State<Calculator> {
               color: Colors.white.withOpacity(0.1),
               blurRadius: 4,
               spreadRadius: 0.5,
-              offset: Offset(-3, -3),
+              offset: const Offset(-3, -3),
             )
           ]
         ),
